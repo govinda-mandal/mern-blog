@@ -1,6 +1,7 @@
+import { FC } from "react";
 import { IPages } from "../interfaces/page";
 
-const Edit: React.FC<IPages> = (props) => {
+const Edit: FC<IPages> = (props) => {
     return (
         <div>
             <h1>Edit</h1>

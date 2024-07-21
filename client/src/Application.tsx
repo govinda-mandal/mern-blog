@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import routes from './config/routes'
 
@@ -6,7 +6,7 @@ export interface IApplicationProps {
 
 }
 
-const Application: React.FC<IApplicationProps> = () => {
+const Application: FC<IApplicationProps> = () => {
   return (
     <Routes>
       {routes.map((route, index) => (

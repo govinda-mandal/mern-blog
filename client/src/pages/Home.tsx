@@ -1,10 +1,15 @@
-import { IPages } from "../interfaces/page";
+import { FC } from 'react';
+import { IPages } from '../interfaces/page';
+import { Container } from 'reactstrap';
+import Navigation from '../components/Navigation';
+import Header from '../components/Header';
 
-const Home: React.FC<IPages> = (props) => {
+const Home: FC<IPages> = (props) => {
     return (
-        <div>
-            <h1>Home</h1>
-        </div>
+        <Container fluid className="p-0">
+            <Navigation />
+            <Header title="A Nerdy Blog Website" headline="Check out what people have to say!" />
+        </Container>
     );
 };
 
